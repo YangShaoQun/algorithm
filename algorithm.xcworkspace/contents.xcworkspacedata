@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:01backpack/01backpack.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:quicksort/quicksort.xcodeproj">
    </FileRef>
 </Workspace>
