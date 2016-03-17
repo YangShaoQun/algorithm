@@ -10,4 +10,4 @@
 ###2.0-1背包问题 动态规划（可得最优解），贪心（近似最优解）
   * 动态规划的核心思想也是把一个问题分成可以递推的子问题
   * 对于0-1背包，这边主要的算法思想是定义maxPrice(i, j)为经过前i个物品的抉择后背包被放了j体积的最大价值
-  * 所以maxPrice(i, j) = max(maxPrice(i-1, j), maxPrice(i-1, j-v[i])+p[i])
+  * 所以maxPrice(i, j) = max(maxPrice(i-1, j), maxPrice(i, j-v[i])+p[i])
