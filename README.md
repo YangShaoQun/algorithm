@@ -14,6 +14,6 @@
  
  
 ###3.字符串子串匹配 kmp算法
-  *算法详解-->http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html   
+  *算法详解--> http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html   
   *本例中将匹配的字符串分成开始下标和结束下标存储在c++ pair类型中，因为可能有多条匹配，所以又将多个结果存储在vector中
 
