@@ -7,7 +7,7 @@
 //
 
 #include "SegmentTree.hpp"
-#define INFINITE 0xFFFF
+#define INFINITE 0x7FFFFFFF
 
 SegmentTree::SegmentTree(int val[], int count)
 {
