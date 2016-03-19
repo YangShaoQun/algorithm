@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SegmentTree::SegmentTree(int*, int):SegmentTree.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "SegmentTree::QueryTree(int, int, int, int, int):SegmentTree.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "_segment_tree[root].value">
+            </PersistentString>
+            <PersistentString
+               value = "INFINITE">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SegmentTree::UpdateTree(int, int, int, int, int, int):SegmentTree.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "_segment_tree[root].value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
