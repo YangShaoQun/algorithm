@@ -44,7 +44,7 @@ void SegmentTree::UpdateTree(int iter_start, int iter_end, int add_val, int root
         return;
     }
     if (iter_start == iter_end) {
-        if (iter_start >= q_start && iter_start < q_end) {
+        if (iter_start > q_start && iter_start < q_end) {
             _segment_tree[root].value += add_val;
         }
         return;

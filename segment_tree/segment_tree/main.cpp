@@ -12,17 +12,7 @@
 
 int main(int argc, const char * argv[])
 {
-    int count = 7;
-    int val[count];
-    for (int i=0; i<count; ++i) {
-        val[i] = 20;
-    }
-    SegmentTree stree(val, count);
-    printf("%d, %d, %d, %d\n", stree.Query(2, 4), stree.Query(2, 5), stree.Query(5, 6), stree.Query(0, 2));
-    stree.Update(2, 5, -1);
-    printf("%d, %d, %d, %d\n", stree.Query(2, 4), stree.Query(2, 5), stree.Query(5, 6), stree.Query(0, 2));
-    
-    int station_count = 8;
+    int count = 8;
     const char* stations[] = {
         "fuzhou",
         "fuzhounan",
@@ -33,21 +23,39 @@ int main(int argc, const char * argv[])
         "xiamenbei",
         "xiamen"
     };
+    
+    int val[count];
+    for (int i=0; i<count; ++i) {
+        val[i] = 200;
+    }
+    
     TrieTree ttree;
-    for (int i=0; i<station_count; ++i) {
+    for (int i=0; i<count; ++i) {
         ttree.InsertWord(stations[i], i);
     }
-    const char* qs[4] = {
-        "pution",
+    
+    SegmentTree stree(val, count);
+    
+    const char* qs[] = {
+        "putian",
         "jinjiang",
-        "fuqin",
-        "xiamen"
+        "fuqing",
+        "xiamen",
+        "fuzhou",
+        "putian"
     };
-    for (int i=0; i<4; ++i) {
-        int value;
-        bool s = ttree.SearchWord(qs[i], value);
-        printf("%s %d\n", s ? "true" : "false", value);
-    }
+    int index1;
+    int index2;
+    ttree.SearchWord(qs[0], index1);
+    ttree.SearchWord(qs[1], index2);
+    printf("%s->%s: %d\n", qs[0], qs[1], stree.Query(index1, index2));
+    stree.Update(index1, index2, -30);
+    ttree.SearchWord(qs[2], index1);
+    ttree.SearchWord(qs[3], index2);
+    printf("%s->%s: %d\n", qs[2], qs[3], stree.Query(index1, index2));
+    ttree.SearchWord(qs[4], index1);
+    ttree.SearchWord(qs[5], index2);
+    printf("%s->%s: %d\n", qs[4], qs[5], stree.Query(index1, index2));
     
     return 0;
 }
