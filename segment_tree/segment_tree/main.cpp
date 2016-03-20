@@ -12,7 +12,10 @@
 int main(int argc, const char * argv[])
 {
     int count = 7;
-    int val[7] = {20, 20, 20, 20, 20, 20, 20};
+    int val[count];
+    for (int i=0; i<count; i++) {
+        val[i] = 20;
+    }
     
     SegmentTree stree(val, count);
     printf("%d, %d, %d, %d\n", stree.Query(2, 4), stree.Query(2, 5), stree.Query(5, 6), stree.Query(0, 2));

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A2519111C9D878500BA33E8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2519101C9D878500BA33E8 /* main.cpp */; };
 		1A2519191C9D90A900BA33E8 /* SegmentTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2519171C9D90A900BA33E8 /* SegmentTree.cpp */; };
+		1A25191C1C9E500000BA33E8 /* TrieTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A25191A1C9E500000BA33E8 /* TrieTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		1A2519101C9D878500BA33E8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1A2519171C9D90A900BA33E8 /* SegmentTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SegmentTree.cpp; sourceTree = "<group>"; };
 		1A2519181C9D90A900BA33E8 /* SegmentTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SegmentTree.hpp; sourceTree = "<group>"; };
+		1A25191A1C9E500000BA33E8 /* TrieTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrieTree.cpp; sourceTree = "<group>"; };
+		1A25191B1C9E500000BA33E8 /* TrieTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TrieTree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				1A2519101C9D878500BA33E8 /* main.cpp */,
 				1A2519171C9D90A900BA33E8 /* SegmentTree.cpp */,
 				1A2519181C9D90A900BA33E8 /* SegmentTree.hpp */,
+				1A25191A1C9E500000BA33E8 /* TrieTree.cpp */,
+				1A25191B1C9E500000BA33E8 /* TrieTree.hpp */,
 			);
 			path = segment_tree;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A25191C1C9E500000BA33E8 /* TrieTree.cpp in Sources */,
 				1A2519111C9D878500BA33E8 /* main.cpp in Sources */,
 				1A2519191C9D90A900BA33E8 /* SegmentTree.cpp in Sources */,
 			);
@@ -243,6 +249,7 @@
 				1A2519161C9D878500BA33E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
