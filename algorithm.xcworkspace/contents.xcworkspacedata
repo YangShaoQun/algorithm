@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:stable_match/stable_match.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:segment_tree/segment_tree.xcodeproj">
    </FileRef>
    <FileRef

@@ -3,6 +3,25 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "SegmentTree::UpdateTree(int, int, int, int, int, int):SegmentTree.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "_segment_tree[root].value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "stable_match(_Partner*, _Partner*):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "is_better_match(int*, int, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "prefer[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "SegmentTree::SegmentTree(int*, int):SegmentTree.cpp">
       </ContextState>
       <ContextState
@@ -13,14 +32,6 @@
             </PersistentString>
             <PersistentString
                value = "INFINITE">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "SegmentTree::UpdateTree(int, int, int, int, int, int):SegmentTree.cpp">
-         <PersistentStrings>
-            <PersistentString
-               value = "_segment_tree[root].value">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
